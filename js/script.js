@@ -2,23 +2,36 @@
 window.onload = function () {
 
 
-
     //dodaję atrybut "required" do wszystkich pól formularza po ustawieniu focus na którymkolwiek z nich
-    let fnames = document.getElementsByName("fname");
-    let i = 0;
-    let fname = fnames[i];
 
-    for (i = 0; i < fnames.length; i++) {
-        let onInputFocus = function () {
-            for (let j = 0; j < fnames.length; j++) {
-                fnames[j].setAttribute("required", "")
-            }
-        };
-        fname.addEventListener("focus", onInputFocus);
-    }
+    let fnames = document.getElementsByName("fname");
+
+    let onInputFocus = function () {
+        fnames.forEach(fname => {
+            fname.setAttribute("required", "")
+        });
+    };
+
+    fnames.forEach(fname => fname.addEventListener("focus", onInputFocus));
+
+
+
+    // sprawdza długość imienia
+
+    let name = document.getElementById("name");
+    name.addEventListener("input", function (e) {
+        if (name.value.length < 3) {
+            e.preventDefault();
+            name.setCustomValidity("Your name is too short. Enter at least 3 characters.");
+        } else {
+            name.setCustomValidity("");
+        }
+    });
+
 
 
     //dodaję powiadomienie o niepoprawnie wypełnionym polu email
+
     let emailData = document.getElementById("emailData");
     emailData.addEventListener("input", function (e) {
         if (emailData.validity.typeMismatch) {
@@ -32,6 +45,7 @@ window.onload = function () {
 
 
     //obsługa "submit"
+
     let form = document.getElementById("form");
     form.addEventListener("submit", function (event) {
 
@@ -47,23 +61,6 @@ window.onload = function () {
                 hello.innerHTML = "<p>thank you!</p>";
             }
         }
-
     });
 
-
-
-// Window.onload()
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
