@@ -1,321 +1,318 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
-  font-size: 12px;
-  color: #581555;
-  width: 100%;
-  line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-size: 12px;
+    color: #581555;
+    width: 100%;
+    line-height: 1.5em;
 }
 
 header {
-  position: relative;
-  width: 100%;
-  padding: 0 0;
-  background: linear-gradient(to right top, #fb6b81, #9134ec);
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+    background: linear-gradient(to right top, #fb6b81, #9134ec);
 }
 
 #wave-top2 {
-  position: absolute;
-  width: 400px;
-  right: 0;
-  top: 330px
+    position: absolute;
+    width: 28%;
+    right: 0;
+    top: 75%;
 
 }
 
 #wave-top {
-  position: absolute;
-  width: 550px;
-  right: -50px;
-  top: 420px;
-}
-
-#wave-bottom {
-  position: absolute;
-  width: 550px;
-  left: 0;
-  top: 330px;
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 94%;
 }
 
 #topnav {
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 2%;
+    padding-bottom: 4%;
 }
 
 ul {
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
+    width: 52%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 1%;
+    display: inline-block;
 }
 
 ul > li {
-  float: left;
-  min-width: 150px;
-  height: 40px;
+    float: left;
+    min-width: 33%;
+    height: 5%;
 }
 
 ul a {
-  text-decoration: none;
-  color: #581555;
+    text-decoration: none;
+    color: #581555;
 }
 
 ul a:hover {
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-#title {
-  font-size: 116px;
-  color: white;
-  text-align: center;
-  padding-bottom: 0;
-}
-
-#subtitle {
-  font-size: 21px;
-  color: white;
-  text-align: center;
-  margin-top: -20px;
-  padding-top: 0px;
-  padding-bottom: 200px;
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 h1 {
-  font-size: 27px;
+    font-size: 9.6em;
+    color: white;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-top: -1%;
+    padding-top: 0;
+    padding-bottom: 13%;
+}
+
+h3 {
+    font-size: 2.5em;
 }
 
 .more {
-  font-size: 15px;
-  border-style: solid;
-  border-color: #D03EC9;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
+    font-size: 1.2em;
+    border: 2px solid #D03EC9;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .more a {
-  text-decoration: none;
-  color: #581555;
+    text-decoration: none;
+    color: #581555;
 }
 
 .more:hover {
-  background-color: #D03EC9;
+    background-color: #D03EC9;
 }
 
 .more:hover a {
-  color: white;
+    color: white;
 }
 
 .container {
-  width: 930px;
+    width: 80%;
+}
+
+.content {
+    margin: 5%;
 }
 
 .small-img {
-  width: 409px;
-  padding: 30px;
-  box-sizing: border-box;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 0%;
+    box-sizing: border-box;
 }
 
 #text1 {
-  float: left;
-  width: 409px;
-  padding-left: 50px;
-  position: relative;
+    float: left;
+    width: 50%;
+    padding: 0% 7%;
+    position: relative;  /* w mobilnej position: static;  i usunąć #text1::before; */
 }
 
 #text1:before {
-  position: absolute;
-  content: "1.";
-  top: 100px;
-  left: -50px;
-  color: #E27CD5;
-  font-size: 200px;
-  font-weight: 600;
-  opacity: 0.7;
+    position: absolute;
+    content: "1.";
+    top: 40%;
+    left: -15%;
+    color: #E27CD5;
+    font-size: 16.6em;
+    font-weight: 600;
+    opacity: 0.7;
 }
 
 #img1 {
-  float: left;
-  margin-right: -50px;
-  margin-bottom: 20px;
+    width: 45%;
 }
 
 #img2 {
-  float: left;
-  margin-left: -30px;
+    float: left;
+    width: 45%;
+    padding-bottom: 5%;
 }
 
 #text2 {
-  float: left;
-  width: 409px;
-  padding-left: 40px;
-  padding-top: 40px;
-  margin-left: 40px;
-  position: relative;
+    width: 100%;
+    margin-top: 0%;
+    padding-left: 56%;
+    position: relative;   /* w mobilnej position: static;  i usunąć #text2::before; */
 }
 
 #text2::before {
-  position: absolute;
-  content: "2.";
-  top: 125px;
-  left: -50px;
-  color: #F98098;
-  font-size: 200px;
-  font-weight: 600;
-  opacity: 0.7;
+    position: absolute;
+    content: "2.";
+    top: 30%;
+    left: 47%;
+    color: #F98098;
+    font-size: 16.6em;
+    font-weight: 600;
+    opacity: 0.7;
 }
 
 .clear {
-  clear: both;
+    clear: both;
+    height: 0;
 }
 
 #subcontainer {
-  height: 400px;
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
+    height: 400px;  /* na jaką miarę zmienić px tutaj */
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 #big-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("../wecreate-assets/img/fullbg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px -485px;
-  transform: rotate(180deg);
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img/fullbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 90%;
+    transform: rotate(180deg);
 }
 
 #text {
-  position: absolute;
-  left: 370px;
-  top: 120px;
-  color: white;
-  font-size: 73px;
-  font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+}
+
+#wave-bottom {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 80%;
 }
 
 #text3 {
-  position: relative;
-  float: left;
-  width: 409px;
-  padding-left: 70px;
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 2% 7%;
 }
 
 #text3::before {
-  position: absolute;
-  content: "3.";
-  top: 90px;
-  left: -50px;
-  color: #E32CB8;
-  font-size: 200px;
-  font-weight: 600;
-  opacity: 0.7;
+    position: absolute;
+    content: "3.";
+    top: 40%;
+    left: -15%;
+    color: #E32CB8;
+    font-size: 16.6em;
+    font-weight: 600;
+    opacity: 0.7;
 }
 
 #img3 {
-  float: left;
-  width: 409px;
+    float: left;
+    width: 45%;
 }
 
 #hello {
-  float: left;
-  font-size: 63px;
-  font-weight: 600;
-  width: 409px;
-  padding-top: 30px;
+    float: left;
+    font-size: 5.2em;
+    line-height: 1.1em;
+    font-weight: 600;
+    width: 50%;
+    padding-top: 10%;
 }
 
 #message {
-  float: left;
-  width: 409px;
-  padding-top: 20px;
-  padding-left: 30px;
+    float: left;
+    width: 50%;
+    padding-top: 5%;
 }
 
 #cop {
-  clear: both;
+    clear: both;
 }
 
 footer {
-  width: 100%;
-  padding: 0 0;
-  margin-top: 40px;
-  background: linear-gradient(to right top, #fb6b81, #9134ec);
+    width: 100%;
+    padding: 0 0;
+    margin-top: 5%;
+    background: linear-gradient(to right bottom, #fb6b81, #9134ec);
 }
 
 input {
-  display: block;
-  font-size: 12px;
-  color: #581555;
-  background: none;
-  border: none;
-  padding-top: 10px;
-  border-bottom: 2px solid #581555;
-  margin-bottom: 15px;
-  width: 369px;
+    display: block;
+    font-size: 1em;
+    color: #581555;
+    background: none;
+    border: none;
+    padding-top: 1%;
+    border-bottom: 2px solid #581555;
+    border-radius: 8px;
+    margin-bottom: 4%;
+    width: 75%;
+}
+input:valid {
+    border-bottom: 2px solid white;
+
+}
+
+input:invalid {
+    /*border-bottom: 2px solid #581555;*/
+    box-shadow: 0 0 5px 1px red;
 }
 
 textarea {
-  display: block;
-  font-size: 12px;
-  color: #581555;
-  background: none;
-  border: 2px solid #581555;
-  padding: 10px;
-  margin: 20px 0 20px 0;
-  min-height: 150px; 
-  width: 369px;
-  border-bottom: 1px solid #581555;
+    display: block;
+    font-size: 1em;
+    color: #581555;
+    background: none;
+    border: 2px solid #581555;
+    padding: 3%;
+    margin: 5% 0 5% 0;
+    min-height: 20%;
+    width: 75%;
+    border-radius: 8px;
+}
+
+textarea:invalid {
+    /*border: 2px solid #581555;*/
+    box-shadow: 0 0 5px 1px red;
+}
+
+textarea:valid {
+    border: 2px solid white;
 }
 
 #send {
-  background: none;
-  font-size: 12px;
-  width: 130px;
-  height: 25px;
-  border: 1px solid white;
-  transition: all 0.3s ease-in-out;
-}
-
-#send a {
-  text-decoration: none;
-  color: white;
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 25%;
+    height: 2em;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
 }
 
 #send:hover {
-  background: white;
+    background: white;
+    color: #581555;
+    font-weight: bold;
 }
 
-#send:hover a {
-  color: #581555;
-  font-weight: bold;
+.error {
+    box-shadow: 0 0 5px 1px red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
