@@ -16,7 +16,7 @@ window.onload = function () {
 
 
 
-    // sprawdza długość imienia
+    // sprawdzam długość imienia
 
     let name = document.getElementById("name");
     name.addEventListener("input", function (e) {
@@ -61,6 +61,7 @@ window.onload = function () {
                 hello.innerHTML = "<p>thank you!</p>";
             }
         }
+        event.preventDefault();
     });
 
 };
