@@ -53,9 +53,9 @@ window.onload = function () {
         for (i = 0; i < fnames.length; i++) {
             let fname = fnames[i];
             let hello = document.getElementById("hello");
-            if (fname.value === "") {
-                event.preventDefault();
+            if (fname.value.length < 3) {
                 hello.innerHTML = "<p>Oops, where is your message?</p>";
+                event.preventDefault();
                 break;
             } else {
                 hello.innerHTML = "<p>thank you!</p>";
