@@ -62,6 +62,10 @@ window.onload = function () {
             }
         }
         event.preventDefault();
+        fnames.forEach(fname => {fname.value === ""});
+            console.log(fname.value)
+
+
     });
 
 };

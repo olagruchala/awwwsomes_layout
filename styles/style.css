@@ -2,16 +2,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    font-size: 12px;
+    font-size: 15px;
     color: #581555;
-    width: 100%;
-    line-height: 1.5em;
+    width: 100vw;
+    line-height: 1.6em;
 }
+
+/*Header*/
 
 header {
     position: relative;
-    width: 100%;
-    padding: 0 0;
     background: linear-gradient(to right top, #fb6b81, #9134ec);
 }
 
@@ -20,36 +20,18 @@ header {
     width: 28%;
     right: 0;
     top: 75%;
-
 }
 
 #wave-top {
     position: absolute;
     width: 45%;
     right: 0;
-    top: 94%;
+    top: 93%;
 }
 
-#topnav {
+.navbar {
     width: 100%;
-    text-align: center;
-    font-size: 2em;
-    padding-top: 2%;
-    padding-bottom: 4%;
-}
-
-ul {
-    width: 52%;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 1%;
-    display: inline-block;
-}
-
-ul > li {
-    float: left;
-    min-width: 33%;
-    height: 5%;
+    text-transform: uppercase;
 }
 
 ul a {
@@ -57,25 +39,18 @@ ul a {
     color: #581555;
 }
 
-ul a:hover {
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
 h1 {
     font-size: 9.6em;
     color: white;
     text-align: center;
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 2em;
     color: white;
     text-align: center;
-    margin-top: -1%;
-    padding-top: 0;
-    padding-bottom: 13%;
+    padding-bottom: 5em;
 }
 
 h3 {
