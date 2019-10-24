@@ -3,15 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--    <link rel="stylesheet" type="text/css" href="styles/normalize.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="styles/bootstrap-grid.css">-->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-<!--    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 481px)" href="styles/xs.css">-->
-<!--    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 801px)" href="styles/medium.css">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>We create</title>
@@ -19,7 +15,7 @@
 <body>
 <header>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md">
+        <nav class="navbar navbar-light navbar-expand-md m-0 p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,11 +46,11 @@
 </header>
 
 <main>
-    <article>
-        <div class="container">
+    <section>
+        <div class="container pt-5">
 
-            <div class="content">
-                <div id="text1">
+            <div class="row align-items-center">
+                <div id="text1" class="col-md-6  col-lg-5 offset-lg-1 mb-4 ">
                     <h3>projects</h3>
                     <p>Af gastropub venmo cliche air plant meh. Mollit man bun nesciunt, commodo synth placeat forage
                         tousled
@@ -65,22 +61,25 @@
                         Aliquip etsy irony veniam, do whatever vice air plant microdosing paleo wayfarers flannel celiac
                         XOXO.
                         Affogato mumblecore migas blue bottle dolor single-origin coffee.</p>
-                    <button class="more"><a href="#">find out more</a></button>
+                    <button class="moreBtn"><a href="#">find out more</a></button>
                 </div>
 
-                <div class="small-img">
-                    <img id="img1" src="images/img/img1.jpg" alt="A person drawing graphics">
+                <div class="col-md-6 col-lg-5">
+                    <figure class="figure ">
+                        <img id="img1" src="images/img/img1.jpg" class="img-fluid figure-img" alt="A person drawing graphics">
+                    </figure>
                 </div>
+
             </div>
 
-            <div class="clear"><!-- --></div>
-
-            <div class="content">
-                <div class="small-img">
-                    <img id="img2" src="images/img/img2.jpg" alt="A table full of food">
+            <div class="row align-items-center">
+                <div class="col-md-6  col-lg-5 offset-lg-1 order-2 order-md-1">
+                    <figure class="figure">
+                        <img id="img2" class="img-fluid figure-img ml-0 pr-5" src="images/img/img2.jpg" alt="A table full of food">
+                    </figure>
                 </div>
 
-                <div id="text2">
+                <div id="text2" class="col-md-6 col-lg-5 order-1 order-md-2 mb-4">
                     <h3>company's culture</h3>
                     <p>Celiac venmo tilde, put a bird on it vinyl man braid etsy plaid fanny pack next level 3 wolf moon
                         chia
@@ -91,28 +90,21 @@
                         leggings vexillologist crucifix, iceland truffaut. Microdosing fashion axe biodiesel poutine,
                         waistcoat
                         helvetica salvia meditation ramps twee.</p>
-                    <button class="more"><a href="#">find out more</a></button>
+                    <button class="moreBtn"><a href="#">find out more</a></button>
                 </div>
             </div>
-
-            <div class="clear"><!-- --></div>
         </div>
 
-
-        <div id="subcontainer">
-            <div id="big-img"></div>
-            <div id="text">
+        <div class="container-fluid m-0 p-0">
+            <div class="row big-img px-0 mx-0">
                 <p>our crazy ideas</p>
-            </div>
-            <div id="wave-bottom">
-                <img src="images/img/wave-bottom.svg" alt="coral wave">
+                <img id="wave-bottom" class="d-none d-md-block" src="images/img/wave-bottom.svg" alt="coral wave">
             </div>
         </div>
 
-
-        <div class="container">
-            <div class="content">
-                <div id="text3">
+        <div class="container pt-5">
+            <div class="row align-items-center">
+                <div id="text3" class="col-md-6  col-lg-5 offset-lg-1 mb-4 ">
                     <h3>experience</h3>
                     <p>Everyday carry cray vegan microdosing waistcoat, godard portland gentrify viral vape hammock.
                         Prism lyft
@@ -123,51 +115,53 @@
                         copper mug, authentic four loko chicharrones salvia fingerstache vaporware chia church-key
                         hoodie
                         single-origin coffee.</p>
-                    <button class="more"><a href="#">find out more</a></button>
+                    <button class="moreBtn"><a href="#">find out more</a></button>
                 </div>
 
-                <div class="small-img">
-                    <img id="img3" src="images/img/img3.jpg" alt="Man in yellow smoke">
+                <div class="col-md-6 col-lg-5">
+                    <figure class="figure ">
+                        <img src="images/img/img3.jpg" class="img-fluid figure-img" alt="Man in yellow smoke">
+                    </figure>
                 </div>
             </div>
-
-            <div class="clear"><!-- --></div>
         </div>
-
-    </article>
+    </section>
 </main>
 
 
-<footer id="contact">
-    <div class="container">
-        <div id="hello">
-            <p>say hello <br> to our team</p>
-        </div>
+<footer id="contact" >
+    <div class="container-fluid pt-5 ">
+        <div class="row align-items-center">
+            <div id="hello" class="col-md-6 col-lg-5 offset-lg-1 mb-4 ">
+                <p>say hello <br> to our team</p>
+            </div>
 
-        <div id="message">
-            <form id="form" name="message" method="GET">
-                <div>
-                    <label for="name">name</label>
-                    <input type="text" id="name" maxlength="20" name="fname">
-                </div>
-                <div>
-                    <label for="emailData">email</label>
-                    <input id="emailData" type="email" placeholder="your@mail.com" name="fname">
-                </div>
-                <div>
-                    <label for="textArea">message</label>
-                    <textarea id="textArea" rows="10" cols="30" name="fname"></textarea>
-                </div>
-                <div>
-                    <input id="send" type="submit" value="send">
-                </div>
-            </form>
-        </div>
+            <div class="col-md-6 col-lg-5">
+                <form id="message" name="message" method="GET">
+                    <div>
+                        <label for="name">name</label>
+                        <input type="text" id="name" maxlength="20" name="fname">
+                    </div>
+                    <div>
+                        <label for="emailData">email</label>
+                        <input id="emailData" type="email" placeholder="your@mail.com" name="fname">
+                    </div>
+                    <div>
+                        <label for="textArea">message</label>
+                        <textarea id="textArea" rows="10" cols="30" name="fname"></textarea>
+                    </div>
+                    <div>
+                        <input id="send" type="submit" value="send">
+                    </div>
+                </form>
+            </div>
 
-        <div id="cop">
-            <p>created by The Awwwesomes in 2017</p>
+            <div id="cop" class="col-12">
+                <p>created by The Awwwesomes in 2017</p>
+            </div>
         </div>
     </div>
+
 
 </footer>
 

@@ -17,16 +17,16 @@ header {
 
 #wave-top2 {
     position: absolute;
-    width: 28%;
+    width: 23em;
     right: 0;
-    top: 75%;
+    top: 73%;
 }
 
 #wave-top {
     position: absolute;
-    width: 45%;
+    width: 40em;
     right: 0;
-    top: 93%;
+    top: 92%;
 }
 
 .navbar {
@@ -53,176 +53,108 @@ h2 {
     padding-bottom: 5em;
 }
 
+/*Container*/
+
 h3 {
     font-size: 2.5em;
 }
 
-.more {
+.moreBtn {
     font-size: 1.2em;
     border: 2px solid #D03EC9;
+    border-radius: 3%;
     background-color: white;
     transition: all 0.3s ease-in-out;
+    padding: 0.7em;
 }
 
-.more a {
+.moreBtn a {
     text-decoration: none;
     color: #581555;
 }
 
-.more:hover {
+.moreBtn:hover {
     background-color: #D03EC9;
 }
 
-.more:hover a {
+.moreBtn:hover a {
     color: white;
 }
 
-.container {
-    width: 80%;
+#text1, #text2, #text3 {
+    position: relative;
 }
 
-.content {
-    margin: 5%;
-}
-
-.small-img {
-    width: 100%;
-    padding-top: 4%;
-    padding-bottom: 0%;
-    box-sizing: border-box;
-}
-
-#text1 {
-    float: left;
-    width: 50%;
-    padding: 0% 7%;
-    position: relative;  /* w mobilnej position: static;  i usunąć #text1::before; */
-}
-
-#text1:before {
+#text1::before {
     position: absolute;
     content: "1.";
-    top: 40%;
-    left: -15%;
+    top: 5rem;
+    left: -4rem;
     color: #E27CD5;
-    font-size: 16.6em;
+    font-size: 13em;
     font-weight: 600;
-    opacity: 0.7;
-}
-
-#img1 {
-    width: 45%;
-}
-
-#img2 {
-    float: left;
-    width: 45%;
-    padding-bottom: 5%;
-}
-
-#text2 {
-    width: 100%;
-    margin-top: 0%;
-    padding-left: 56%;
-    position: relative;   /* w mobilnej position: static;  i usunąć #text2::before; */
+    opacity: 0.5;
 }
 
 #text2::before {
     position: absolute;
     content: "2.";
-    top: 30%;
-    left: 47%;
+    top: 5rem;
+    left: -4rem;
     color: #F98098;
-    font-size: 16.6em;
+    font-size: 13em;
     font-weight: 600;
-    opacity: 0.7;
-}
-
-.clear {
-    clear: both;
-    height: 0;
-}
-
-#subcontainer {
-    height: 400px;  /* na jaką miarę zmienić px tutaj */
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative;
-}
-
-#big-img {
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/img/fullbg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px 90%;
-    transform: rotate(180deg);
-}
-
-#text {
-    position: absolute;
-    left: 30%;
-    top: 30%;
-    color: white;
-    font-size: 6em;
-    font-weight: bold;
-}
-
-#wave-bottom {
-    position: absolute;
-    width: 50%;
-    left: 0;
-    top: 80%;
-}
-
-#text3 {
-    position: relative;
-    float: left;
-    width: 50%;
-    padding: 2% 7%;
+    opacity: 0.5;
 }
 
 #text3::before {
     position: absolute;
     content: "3.";
-    top: 40%;
-    left: -15%;
+    top: 6rem;
+    left: -6rem;
     color: #E32CB8;
     font-size: 16.6em;
     font-weight: 600;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
-#img3 {
-    float: left;
-    width: 45%;
+.big-img {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/img/fullbg.jpg");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: 35% 88%;
+    transform: rotate(180deg);
+    position: relative;
 }
+
+.big-img > p {
+    margin: auto;
+    top: 50%;
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    transform:rotate(-180deg);
+    line-height: 1.5em;
+}
+
+#wave-bottom {
+    position: absolute;
+    width: 47em;
+    right: 0;
+    bottom: 89%;
+}
+
+/*Footer*/
 
 #hello {
-    float: left;
     font-size: 5.2em;
     line-height: 1.1em;
     font-weight: 600;
-    width: 50%;
-    padding-top: 10%;
-}
-
-#message {
-    float: left;
-    width: 50%;
-    padding-top: 5%;
-}
-
-#cop {
-    clear: both;
 }
 
 footer {
-    width: 100%;
-    padding: 0 0;
-    margin-top: 5%;
     background: linear-gradient(to right bottom, #fb6b81, #9134ec);
 }
 
@@ -232,7 +164,7 @@ input {
     color: #581555;
     background: none;
     border: none;
-    padding-top: 1%;
+    /*padding-top: 1%;*/
     border-bottom: 2px solid #581555;
     border-radius: 8px;
     margin-bottom: 4%;
@@ -240,11 +172,6 @@ input {
 }
 input:valid {
     border-bottom: 2px solid white;
-
-}
-
-input:invalid {
-    box-shadow: 0 0 5px 1px red;
 }
 
 textarea {
@@ -260,7 +187,7 @@ textarea {
     border-radius: 8px;
 }
 
-textarea:invalid {
+textarea:invalid, input:invalid  {
     box-shadow: 0 0 5px 1px red;
 }
 
@@ -286,6 +213,8 @@ textarea:valid {
     font-weight: bold;
 }
 
-.error {
-    box-shadow: 0 0 5px 1px red;
+@media only screen and (max-width: 767px) {
+    ::before {
+        display: none;
+    }
 }
