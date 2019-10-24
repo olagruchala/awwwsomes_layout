@@ -1,24 +1,21 @@
 
 window.onload = function () {
 
+    let form = document.getElementById("message");
+    let fnames = document.getElementsByName("fname");
+    let name = document.getElementById("name");
+    let emailData = document.getElementById("emailData");
+    let textArea = document.getElementById("textArea");
+
 
     //dodaję atrybut "required" do wszystkich pól formularza po ustawieniu focus na którymkolwiek z nich
-
-    let fnames = document.getElementsByName("fname");
-
     let onInputFocus = function () {
-        fnames.forEach(fname => {
-            fname.setAttribute("required", "")
-        });
+        fnames.forEach(elem => elem.setAttribute("required", ""));
     };
-
-    fnames.forEach(fname => fname.addEventListener("focus", onInputFocus));
-
+    fnames.forEach(elem => elem.addEventListener("focus", onInputFocus));
 
 
-    // sprawdzam długość imienia
-
-    let name = document.getElementById("name");
+    //dodaję powiadomienie o za krotkim imieniu
     name.addEventListener("input", function (e) {
         if (name.value.length < 3) {
             e.preventDefault();
@@ -29,10 +26,7 @@ window.onload = function () {
     });
 
 
-
     //dodaję powiadomienie o niepoprawnie wypełnionym polu email
-
-    let emailData = document.getElementById("emailData");
     emailData.addEventListener("input", function (e) {
         if (emailData.validity.typeMismatch) {
             emailData.setCustomValidity("It's probably not an email");
@@ -43,29 +37,22 @@ window.onload = function () {
     });
 
 
-
-    //obsługa "submit"
-
-    let form = document.getElementById("form");
-    form.addEventListener("submit", function (event) {
-
-        //sprawdzam czy "fname" nie są puste
-        for (i = 0; i < fnames.length; i++) {
-            let fname = fnames[i];
-            let hello = document.getElementById("hello");
-            if (fname.value.length < 3) {
-                hello.innerHTML = "<p>Oops, where is your message?</p>";
-                event.preventDefault();
-                break;
-            } else {
-                hello.innerHTML = "<p>thank you!</p>";
-            }
+    //dodaję powiadomienie o wymaganej długoci wiadomoci -> min 4 znaki
+    textArea.addEventListener("input",function (e) {
+        if (textArea.value.length <= 3) {
+            e.preventDefault();
+            textArea.setCustomValidity("Your message is too short. Write us something more ;).");
+        } else {
+            textArea.setCustomValidity("");
         }
-        event.preventDefault();
-        fnames.forEach(fname => {fname.value === ""});
-            console.log(fname.value)
-
-
     });
 
+
+    // obsługa "submit"
+    form.addEventListener("submit", function (e) {
+        let hello = document.getElementById("hello");
+        e.preventDefault();
+        hello.innerHTML = "<p>thank you!</p>";
+        fnames.forEach(elem => elem.value = "");
+    });
 };
